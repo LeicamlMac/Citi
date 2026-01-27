@@ -1,0 +1,354 @@
+<!-- index.html (COMPLETO / SEM CORTES) -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Citinova | Prefeitura de Fortaleza</title>
+
+  <!-- Bootstrap (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<!-- ScrollSpy nativo do Bootstrap (resolve o "active" travado) -->
+<body data-bs-spy="scroll" data-bs-target=".navbar-citinova" data-bs-offset="90" tabindex="0">
+
+<!-- Barra util -->
+<div class="topbar d-none d-lg-block">
+  <div class="container d-flex gap-3 py-1 small">
+    <a class="topbar-link" href="https://diariooficial.fortaleza.ce.gov.br" target="_blank" rel="noopener">Diário Oficial</a>
+    <a class="topbar-link" href="https://acessoainformacao.fortaleza.ce.gov.br" target="_blank" rel="noopener">Acesso à informação</a>
+    <a class="topbar-link" href="https://portaltransparencia.fortaleza.ce.gov.br" target="_blank" rel="noopener">Transparência</a>
+    <a class="topbar-link" href="https://catalogodeservicos.fortaleza.ce.gov.br" target="_blank" rel="noopener">Serviços</a>
+    <a class="topbar-link" href="https://legislacao.fortaleza.ce.gov.br" target="_blank" rel="noopener">Legislação</a>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top navbar-citinova" aria-label="Navegação principal">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2 scroll" href="#topo">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">Citinova</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+      aria-controls="navMain" aria-expanded="false" aria-label="Abrir menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#sobre" id="dropSobre" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sobre
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropSobre">
+            <li><a class="dropdown-item scroll" href="#sobre">Sobre a Citinova</a></li>
+            <li><a class="dropdown-item" href="https://citinova.fortaleza.ce.gov.br/quem-somos/" target="_blank" rel="noopener">Quem somos</a></li>
+            <li><a class="dropdown-item" href="https://citinova.fortaleza.ce.gov.br/o-que-fazemos/" target="_blank" rel="noopener">O que fazemos</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link scroll" href="#programas">Programas e Projetos</a></li>
+        <li class="nav-item"><a class="nav-link scroll" href="#noticias">Últimas notícias</a></li>
+        <li class="nav-item"><a class="nav-link scroll" href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="topo" class="page">
+
+  <!-- HERO (carrossel menor/médio, automático 5s, SEM setas/controls) -->
+  <section class="hero" aria-label="Destaques">
+    <div
+      id="carouselHero"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="5000"
+      data-bs-pause="false"
+      data-bs-touch="false"
+      data-bs-keyboard="false"
+    >
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img class="hero-img" src="https://citinova.fortaleza.ce.gov.br/media/banners/BETA_v2_1440_x_712_px_1_1_cPkjU15.png" alt="Destaque Citinova">
+          <div class="hero-content-wrap">
+            <div class="container">
+              <div class="hero-content">
+                <p class="hero-eyebrow">CITINOVA · FORTALEZA</p>
+                <h1 class="hero-title">Inovação, tecnologia e cidadania digital</h1>
+                <p class="hero-subtitle d-none d-md-block">Protótipo institucional para apresentação interna.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img class="hero-img" src="https://citinova.fortaleza.ce.gov.br/media/banners/BETA_v2_1440_x_712_px_1_1_cPkjU15.png" alt="Destaque Citinova 2">
+          <div class="hero-content-wrap">
+            <div class="container">
+              <div class="hero-content">
+                <p class="hero-eyebrow">CITINOVA</p>
+                <h2 class="hero-title">Programas e projetos com impacto real</h2>
+                <p class="hero-subtitle d-none d-md-block">Conteúdo institucional da Citinova.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img class="hero-img" src="https://citinova.fortaleza.ce.gov.br/media/banners/BETA_v2_1440_x_712_px_1_1_cPkjU15.png" alt="Destaque Citinova 3">
+          <div class="hero-content-wrap">
+            <div class="container">
+              <div class="hero-content">
+                <p class="hero-eyebrow">FORTALEZA</p>
+                <h2 class="hero-title">Dados abertos e tecnologia pública</h2>
+                <p class="hero-subtitle d-none d-md-block">Transparência e inovação para a cidade.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6">
+        <p class="section-kicker">SOBRE</p>
+        <h2 class="section-title">Citinova</h2>
+        <p class="section-text">
+          A Fundação de Ciência, Tecnologia e Inovação de Fortaleza (Citinova) atua para estimular a criatividade,
+          difundir conhecimento científico e fomentar tecnologias inovadoras para enfrentar desafios urbanos e melhorar
+          a qualidade de vida da população.
+        </p>
+        <div class="d-flex gap-2 flex-wrap">
+          <a class="btn btn-primary btn-citi scroll" href="#programas">Ver Programas</a>
+          <a class="btn btn-outline-secondary" href="https://citinova.fortaleza.ce.gov.br/quem-somos/" target="_blank" rel="noopener">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="media-frame">
+          <img src="https://citinova.fortaleza.ce.gov.br/media/logos/OBCI.png" alt="Imagem institucional Citinova">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAIXA AZUL -->
+  <section class="about-strip">
+    <div class="container d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+      <div>
+        <h3 class="about-strip-title">Inovamos para incluir</h3>
+        <p class="about-strip-text mb-0">Um resumo institucional simples para apresentação inicial.</p>
+      </div>
+      <a class="btn btn-light btn-sm scroll" href="#contato">Fale conosco</a>
+    </div>
+  </section>
+
+  <!-- PROGRAMAS E PROJETOS (sem setas para não ter área invisível) -->
+  <section id="programas" class="section bg-light">
+    <div class="container">
+      <div class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-3">
+        <div>
+          <p class="section-kicker mb-1">DESTAQUES</p>
+          <h2 class="section-title mb-0">Programas e Projetos</h2>
+        </div>
+        <a class="link-more" href="https://citinova.fortaleza.ce.gov.br/" target="_blank" rel="noopener">Ver no site oficial</a>
+      </div>
+
+      <div id="carouselProgramas" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false" data-bs-touch="true">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="row g-4">
+              <div class="col-md-6 col-xl-4">
+                <article class="card program-card h-100">
+                  <div class="program-logo-wrap">
+                    <img src="https://citinova.fortaleza.ce.gov.br/media/logos/logo-ciptea_one.png" alt="CIPTEA">
+                  </div>
+                  <div class="card-body">
+                    <h3 class="h5 mb-2">Ciptea</h3>
+                    <p class="text-muted mb-3">
+                      Carteira de Identificação Digital da Pessoa com TEA, facilitando acesso a direitos e prioridade de atendimento.
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="https://citinova.fortaleza.ce.gov.br/programa/ciptea" target="_blank" rel="noopener">Saiba mais</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-6 col-xl-4">
+                <article class="card program-card h-100">
+                  <div class="program-logo-wrap">
+                    <img src="https://citinova.fortaleza.ce.gov.br/media/logos/OBCI.png" alt="Observatório Cidades Inteligentes">
+                  </div>
+                  <div class="card-body">
+                    <h3 class="h5 mb-2">Observatório Cidades Inteligentes</h3>
+                    <p class="text-muted mb-3">
+                      Monitora dados, projetos e políticas, com foco em indicadores e rankings, alinhado aos ODS.
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="https://citinova.fortaleza.ce.gov.br/programa/observatorio-cidades-inteligentes" target="_blank" rel="noopener">Saiba mais</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-6 col-xl-4">
+                <article class="card program-card h-100">
+                  <div class="program-logo-wrap">
+                    <img src="https://citinova.fortaleza.ce.gov.br/media/logos/mob_logo_1.png" alt="Desafio Mobilidade Cidadã">
+                  </div>
+                  <div class="card-body">
+                    <h3 class="h5 mb-2">Desafio Mobilidade Cidadã</h3>
+                    <p class="text-muted mb-3">
+                      Parceria para pilotar soluções inovadoras de mobilidade urbana, com foco em territórios de baixa renda.
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="https://citinova.fortaleza.ce.gov.br/programa/desafio-mobilidade-cidada" target="_blank" rel="noopener">Saiba mais</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row g-4">
+              <div class="col-md-6 col-xl-4">
+                <article class="card program-card h-100">
+                  <div class="program-logo-wrap">
+                    <img src="https://citinova.fortaleza.ce.gov.br/media/logos/dados_abertos.png" alt="Fortaleza Dados Abertos">
+                  </div>
+                  <div class="card-body">
+                    <h3 class="h5 mb-2">Fortaleza Dados Abertos</h3>
+                    <p class="text-muted mb-3">
+                      Portal de dados em formatos abertos, estimulando inovação, empreendedorismo e geração de negócios.
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="https://citinova.fortaleza.ce.gov.br/programa/fortaleza-dados-abertos" target="_blank" rel="noopener">Saiba mais</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-6 col-xl-4">
+                <article class="card program-card h-100">
+                  <div class="program-logo-wrap">
+                    <img src="https://citinova.fortaleza.ce.gov.br/media/logos/QUALIDADE-LOGO.png" alt="Vigilância da Qualidade do Ar">
+                  </div>
+                  <div class="card-body">
+                    <h3 class="h5 mb-2">Vigilância da Qualidade do Ar</h3>
+                    <p class="text-muted mb-3">
+                      Monitoramento da qualidade do ar e apoio a políticas públicas de saúde, educação ambiental e mobilidade.
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="https://citinova.fortaleza.ce.gov.br/programa/vigilancia-da-qualidade-do-ar" target="_blank" rel="noopener">Saiba mais</a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-6 col-xl-4">
+                <article class="card program-card h-100">
+                  <div class="program-logo-wrap">
+                    <img src="https://citinova.fortaleza.ce.gov.br/media/logos/CITIDIGITAL-LOGO-COLOR.png" alt="CitiDigital">
+                  </div>
+                  <div class="card-body">
+                    <h3 class="h5 mb-2">CitiDigital</h3>
+                    <p class="text-muted mb-3">
+                      Jornada gratuita e online de aprendizagem em tecnologia, com formação teórica e prática.
+                    </p>
+                    <a class="btn btn-outline-primary btn-sm" href="https://citinova.fortaleza.ce.gov.br/programa/citidigital" target="_blank" rel="noopener">Saiba mais</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <p class="small text-muted mt-3 mb-0">
+        
+      </p>
+    </div>
+  </section>
+
+  <!-- NOTÍCIAS -->
+  <section id="noticias" class="section container">
+    <div class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-3">
+      <div>
+        <p class="section-kicker mb-1">ATUALIZAÇÕES</p>
+        <h2 class="section-title mb-0">Últimas notícias</h2>
+      </div>
+      <a class="link-more" href="https://www.fortaleza.ce.gov.br/noticias" target="_blank" rel="noopener">Ver notícias da Prefeitura</a>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-xl-4">
+        <article class="card news-card h-100">
+          <div class="card-body">
+            <p class="news-date mb-2">EM BREVE</p>
+            <h3 class="h5">Notícia institucional 1</h3>
+            <p class="text-muted mb-0">Espaço reservado para notícias da Citinova.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-6 col-xl-4">
+        <article class="card news-card h-100">
+          <div class="card-body">
+            <p class="news-date mb-2">EM BREVE</p>
+            <h3 class="h5">Notícia institucional 2</h3>
+            <p class="text-muted mb-0">Conteúdo será preenchido pela equipe.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-6 col-xl-4">
+        <article class="card news-card h-100">
+          <div class="card-body">
+            <p class="news-date mb-2">EM BREVE</p>
+            <h3 class="h5">Notícia institucional 3</h3>
+            <p class="text-muted mb-0">Modelo de card pronto para publicação.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="footer-top">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-6">
+          <h2 class="footer-title">Contato</h2>
+          <p class="footer-text mb-1">Fundação de Ciência, Tecnologia e Inovação de Fortaleza (Citinova)</p>
+          <p class="footer-text mb-1">Rua Padre Valdevino, 1040 · Joaquim Távora · Fortaleza-CE</p>
+          <p class="footer-text mb-0">CEP 60135-040</p>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="h6 text-white-50">Redes</h3>
+          <div class="d-flex gap-3 flex-wrap">
+            <a class="footer-link" href="https://br.linkedin.com/company/fundacao-ciencia-tecnologia-citinova" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="footer-link" href="https://citinova.fortaleza.ce.gov.br/" target="_blank" rel="noopener">Site oficial</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-bottom">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <span>© Citinova · Prefeitura de Fortaleza</span>
+      <a class="footer-link scroll" href="#topo">Voltar ao topo</a>
+    </div>
+  </footer>
+
+</main>
+
+<!-- Bootstrap Bundle (CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

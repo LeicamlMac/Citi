@@ -1,0 +1,218 @@
+:root{
+  --citi-orange:#F15A22;
+  --citi-green:#009889;
+  --citi-blue:#00A0DC;
+  --citi-beige:#FFE6CC;
+  --citi-slate:#32565B;
+  --citi-dark:#414042;
+  --citi-bg:#ffffff;
+}
+
+html{scroll-behavior:smooth;}
+body{
+  background:var(--citi-bg);
+  color:var(--citi-dark);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* Topbar */
+.topbar{
+  background: #f7f7f7;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  z-index: 1100;
+}
+.topbar-link{
+  color: var(--citi-dark);
+  text-decoration: none;
+}
+.topbar-link:hover{ color: var(--citi-orange); }
+
+/* Navbar */
+.navbar-citinova{
+  top: 0;
+  z-index: 1200;
+}
+.navbar-citinova .navbar-brand .brand-mark{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--citi-orange);
+  display: inline-block;
+}
+.brand-text{ letter-spacing: .2px; }
+
+.navbar .nav-link{
+  color: var(--citi-dark);
+  font-weight: 500;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus{
+  color: var(--citi-orange);
+}
+
+/* Ajuste de espaçamento do topo (navbar fixa) */
+.page{
+  padding-top: 86px;
+}
+
+/* Hero (carrossel menor) */
+.hero{
+  background: #fff;
+}
+.hero-img{
+  height: 360px;
+  object-fit: cover;
+  width: 100%;
+}
+.hero-caption{
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+}
+.hero-card{
+  margin: 0 auto;
+  max-width: 980px;
+  background: rgba(255,255,255,.92);
+  border-top: 4px solid var(--citi-orange);
+  padding: 18px 18px 16px;
+  color: var(--citi-dark);
+}
+.hero-eyebrow{
+  margin: 0 0 6px;
+  font-size: .82rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.hero-title{
+  margin: 0 0 6px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+.hero-subtitle{ margin:0; }
+
+/* Seções */
+.section{
+  padding: 64px 0;
+}
+.section-kicker{
+  font-size: .78rem;
+  letter-spacing: .10em;
+  color: #666;
+  text-transform: uppercase;
+}
+.section-title{
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.section-text{ color:#555; }
+
+/* Media frame (sobre) */
+.media-frame{
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+  min-height: 260px;
+  display: grid;
+  place-items: center;
+  padding: 22px;
+}
+.media-frame img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* Faixa azul (sobre resumido) */
+.about-strip{
+  background: var(--citi-blue);
+  color: #fff;
+  padding: 22px 0;
+}
+.about-strip-title{
+  margin: 0 0 2px;
+  font-weight: 800;
+}
+.about-strip-text{ opacity: .9; }
+
+/* Botões */
+.btn-citi{
+  background: var(--citi-orange);
+  border-color: var(--citi-orange);
+}
+.btn-citi:hover,
+.btn-citi:focus{
+  background: #d94f1f;
+  border-color: #d94f1f;
+}
+
+/* Link "ver mais" */
+.link-more{
+  text-decoration: none;
+  color: var(--citi-dark);
+  font-weight: 600;
+}
+.link-more:hover{ color: var(--citi-orange); }
+
+/* Program cards */
+.program-card{
+  border: 1px solid #eee;
+  box-shadow: 0 10px 20px rgba(0,0,0,.06);
+  border-radius: 14px;
+}
+.program-logo-wrap{
+  display: grid;
+  place-items: center;
+  padding: 18px 18px 0;
+}
+.program-logo-wrap img{
+  height: 56px;
+  width: auto;
+}
+
+/* News cards */
+.news-card{
+  border: 1px solid #eee;
+  border-radius: 14px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.06);
+}
+.news-date{
+  font-size: .8rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #777;
+}
+
+/* Footer */
+.footer-top{
+  background: var(--citi-dark);
+  color: #fff;
+  padding: 50px 0;
+}
+.footer-title{
+  font-weight: 800;
+  margin: 0 0 10px;
+}
+.footer-text{ opacity: .92; }
+.footer-link{
+  color: #fff;
+  opacity: .9;
+  text-decoration: none;
+}
+.footer-link:hover{ color: var(--citi-beige); opacity: 1; }
+
+.footer-bottom{
+  background: #2f2f30;
+  color: #fff;
+  padding: 14px 0;
+  font-size: .95rem;
+}
+
+/* Melhorias mobile */
+@media (max-width: 575.98px){
+  .hero-img{ height: 270px; }
+  .hero-card{ border-top-width: 3px; }
+}
