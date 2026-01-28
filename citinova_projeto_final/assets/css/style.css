@@ -1,4 +1,4 @@
-:root{
+:root{ 
   --citi-orange:#F15A22;
   --citi-green:#009889;
   --citi-blue:#00A0DC;
@@ -215,4 +215,22 @@ body{
 @media (max-width: 575.98px){
   .hero-img{ height: 270px; }
   .hero-card{ border-top-width: 3px; }
+}
+
+
+/* =========================================================
+   FIX EXTRA — Texto "Citinova" sumindo no tema claro (Dark Reader)
+   Apenas adiciona força de cor no nome da marca
+   ========================================================= */
+.navbar-citinova .brand-text{
+  color: #414042 !important;
+  font-weight: 600;
+}
+
+.navbar-citinova .navbar-brand{
+  opacity: 1 !important;
+}
+
+.navbar-citinova .brand-mark{
+  background: #F15A22 !important;
 }
