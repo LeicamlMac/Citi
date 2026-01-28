@@ -1,4 +1,4 @@
-/* assets/js/main.js (COMPLETO / SEM CORTES)
+/* assets/js/main.js (COMPLETO / SEM CORTES) 
    - Mantém o scroll suave
    - Fecha menu no mobile
    - ATIVO do menu fica por conta do ScrollSpy nativo do Bootstrap (mais confiável)

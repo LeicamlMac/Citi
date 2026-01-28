@@ -126,18 +126,6 @@ body{
   height: auto;
 }
 
-/* Faixa azul (sobre resumido) */
-.about-strip{
-  background: var(--citi-blue);
-  color: #fff;
-  padding: 22px 0;
-}
-.about-strip-title{
-  margin: 0 0 2px;
-  font-weight: 800;
-}
-.about-strip-text{ opacity: .9; }
-
 /* Botões */
 .btn-citi{
   background: var(--citi-orange);
@@ -233,4 +221,89 @@ body{
 
 .navbar-citinova .brand-mark{
   background: #F15A22 !important;
+}
+
+/* =========================================================
+   AJUSTE 1 — "Sobre" visível no tema claro (não depender de hover)
+   ========================================================= */
+.navbar-citinova .nav-link,
+.navbar-citinova .dropdown-toggle{
+  color: var(--citi-dark) !important;
+}
+
+.navbar-citinova .nav-link.active,
+.navbar-citinova .dropdown-toggle.show{
+  color: var(--citi-orange) !important;
+}
+
+/* =========================================================
+   AJUSTE 2 — Layout "Sobre + Notícias ao lado"
+   ========================================================= */
+.about-wrap{
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================================================
+   AJUSTE 3 — Diretorias (Inovação / Tecnologia / Cidadania Digital)
+   ========================================================= */
+.dir-row{
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 28px;
+  align-items: center;
+  padding: 28px 0;
+  border-top: 1px solid #eee;
+}
+.dir-row:first-child{ border-top: 0; padding-top: 0; }
+.dir-row-reverse{
+  grid-template-columns: .9fr 1.1fr;
+}
+.dir-row-reverse .dir-text{ order: 2; }
+.dir-row-reverse .dir-media{ order: 1; }
+
+.dir-title{
+  font-weight: 800;
+  margin: 0 0 10px;
+}
+.dir-desc{
+  color: #555;
+  margin: 0 0 14px;
+  max-width: 60ch;
+}
+
+.dir-media{
+  display: grid;
+  place-items: center;
+}
+.dir-media img{
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid #eee;
+  box-shadow: 0 10px 20px rgba(0,0,0,.06);
+  background: #fff;
+}
+
+/* Mobile: diretorias em coluna */
+@media (max-width: 991.98px){
+  .dir-row,
+  .dir-row-reverse{
+    grid-template-columns: 1fr;
+  }
+  .dir-row-reverse .dir-text{ order: 1; }
+  .dir-row-reverse .dir-media{ order: 2; }
+}
+
+.media-frame {
+  max-height: 480px;      
+  padding: 2px;          
+}
+
+.media-frame img {
+  width: 130%;
+  height: 660px;            
+  border-radius: 12px;
+  border-radius: px;
 }
