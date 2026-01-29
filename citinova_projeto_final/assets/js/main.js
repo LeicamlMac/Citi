@@ -1,3 +1,8 @@
+/* assets/js/main.js (COMPLETO / SEM CORTES)
+   - Mantém o scroll suave
+   - Fecha menu no mobile
+   - ATIVO do menu fica por conta do ScrollSpy nativo do Bootstrap
+*/
 (function () {
   'use strict';
 
@@ -16,7 +21,6 @@
     window.scrollTo({ top, behavior: 'smooth' });
   }
 
-  // Scroll suave + fecha menu mobile
   document.querySelectorAll('a.scroll[href^="#"]').forEach(link => {
     link.addEventListener('click', e => {
       const href = link.getAttribute('href');
@@ -31,7 +35,6 @@
     });
   });
 
-  // Recalcular ScrollSpy corretamente após carregar (garante que o active acompanhe o scroll)
   window.addEventListener('load', () => {
     const el = document.body;
     bootstrap.ScrollSpy.getOrCreateInstance(el, {

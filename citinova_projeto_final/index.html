@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<!-- ScrollSpy nativo do Bootstrap (resolve o "active" travado) -->
 <body data-bs-spy="scroll" data-bs-target=".navbar-citinova" data-bs-offset="90" tabindex="0">
 
 <!-- Barra util -->
@@ -51,7 +50,6 @@
         </li>
 
         <li class="nav-item"><a class="nav-link scroll" href="#programas">Programas e Projetos</a></li>
-        <li class="nav-item"><a class="nav-link scroll" href="#noticias">Últimas notícias</a></li>
         <li class="nav-item"><a class="nav-link scroll" href="#contato">Contato</a></li>
       </ul>
     </div>
@@ -60,7 +58,7 @@
 
 <main id="topo" class="page">
 
-  <!-- HERO (carrossel menor/médio, automático 5s, SEM setas/controls) -->
+  <!-- HERO -->
   <section class="hero" aria-label="Destaques">
     <div
       id="carouselHero"
@@ -116,7 +114,7 @@
     </div>
   </section>
 
-  <!-- SOBRE + NOTÍCIAS AO LADO (exigência) -->
+  <!-- SOBRE + NOTÍCIAS AO LADO -->
   <section id="sobre" class="section container">
     <div class="row g-4 align-items-stretch">
       <!-- Coluna: Sobre -->
@@ -134,16 +132,17 @@
             <a class="btn btn-outline-secondary" href="https://citinova.fortaleza.ce.gov.br/quem-somos/" target="_blank" rel="noopener">Saiba mais</a>
           </div>
 
-          <!-- ✅ Imagem (menor e aparecendo inteira) -->
+          <!-- Imagem -->
           <div class="mt-4">
             <div class="media-frame media-frame--about">
+              <!-- ✅ troque aqui se quiser: assets/img/fachada-citinova.png -->
               <img src="assets/img/foto.png" alt="Sede da Citinova">
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Coluna: Notícias (ao lado do Sobre) -->
+      <!-- Coluna: Notícias -->
       <div class="col-lg-5" id="noticias">
         <div class="h-100">
           <div class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-3">
@@ -191,60 +190,63 @@
     </div>
   </section>
 
-  <!-- DIRETORIAS (layout alternado igual tua 3ª imagem) -->
+  <!-- DIRETORIAS (layout igual sua 3ª imagem) -->
   <section id="diretorias" class="section container">
-    <div class="dir-stack">
+    <div class="row g-5">
 
-      <!-- Inovação (texto esquerda / card direita) -->
-      <div class="dir-row">
-        <div class="dir-text">
-          <h3 class="dir-title">Inovação</h3>
-          <p class="dir-desc">
-            A Diretoria de Inovação trabalha na prospecção de novas tecnologias e modelos de negócio que possam ser aplicados à gestão pública,
-            fomentando o ecossistema local de startups e economia criativa.
-          </p>
-           <a class="btn btn-outline-secondary btn-sm" href="#">Conheça</a>
-        </div>
+      <div class="col-12">
+        <div class="dir-row">
+          <div class="dir-text">
+            <h3 class="dir-title">Inovação</h3>
+            <p class="dir-desc">
+              A Diretoria de Inovação trabalha na prospecção de novas tecnologias e modelos de negócio que possam ser aplicados à gestão pública,
+              fomentando o ecossistema local de startups e economia criativa.
+            </p>
+            <a class="btn btn-outline-secondary btn-sm" href="#">Conheça</a>
+          </div>
 
-        <div class="dir-media"> 
-          <div class="dir-card dir-card--beige">
-            <span>Inovação</span>
+          <div class="dir-media">
+            <div class="dir-card">
+              <img src="assets/img/inovacao.png" alt="Inovação">
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Tecnologia (card esquerda / texto direita) -->
-      <div class="dir-row dir-row-reverse">
-        <div class="dir-text">
-          <h3 class="dir-title">Tecnologia</h3>
-          <p class="dir-desc">
-            Voltada para o desenvolvimento de software e infraestrutura, esta diretoria é o braço técnico que sustenta os sistemas municipais,
-            garantindo arquiteturas modernas, seguras e escaláveis.
-          </p>
-          <a class="btn btn-outline-secondary btn-sm" href="#">Conheça</a>
-        </div>
+      <div class="col-12">
+        <div class="dir-row dir-row-reverse">
+          <div class="dir-text">
+            <h3 class="dir-title">Tecnologia</h3>
+            <p class="dir-desc">
+              Voltada para o desenvolvimento de software e infraestrutura, esta diretoria é o braço técnico que sustenta os sistemas municipais,
+              garantindo arquiteturas modernas, seguras e escaláveis.
+            </p>
+            <a class="btn btn-outline-secondary btn-sm" href="#">Conheça</a>
+          </div>
 
-        <div class="dir-media">
-          <div class="dir-card dir-card--blue">
-            <span>Tecnologia</span>
+          <div class="dir-media">
+            <div class="dir-card">
+              <img src="assets/img/tecnologia.jpg" alt="Tecnologia">
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Cidadania Digital (texto esquerda / card direita) -->
-      <div class="dir-row">
-        <div class="dir-text">
-          <h3 class="dir-title">Cidadania Digital</h3>
-          <p class="dir-desc">
-            Focada em reduzir a lacuna digital, promovendo o acesso democrático à tecnologia e capacitando o cidadão para utilizar os serviços públicos
-            de forma digital e simplificada.
-          </p>
-          <a class="btn btn-outline-secondary btn-sm" href="#">Conheça</a>
-        </div>
+      <div class="col-12">
+        <div class="dir-row">
+          <div class="dir-text">
+            <h3 class="dir-title">Cidadania Digital</h3>
+            <p class="dir-desc">
+              Focada em reduzir a lacuna digital, promovendo o acesso democrático à tecnologia e capacitando o cidadão para utilizar os serviços públicos
+              de forma digital e simplificada.
+            </p>
+            <a class="btn btn-outline-secondary btn-sm" href="#">Conheça</a>
+          </div>
 
-        <div class="dir-media">
-          <div class="dir-card dir-card--green">
-            <span>Cidadania Digital</span>
+          <div class="dir-media">
+            <div class="dir-card">
+              <img src="assets/img/cidadania-digital.jpg" alt="Cidadania Digital">
+            </div>
           </div>
         </div>
       </div>
@@ -252,57 +254,32 @@
     </div>
   </section>
 
-  <!-- NÚMEROS DA CITINOVA -->
+     <!-- NÚMEROS DA CITINOVA -->
   <section id="numeros" class="section container">
-    <div class="numbers">
+    <div class="numbers-card">
       <h2 class="numbers-title">
-        <span>NÚMEROS DA</span> <strong>CITINOVA</strong>
+        <span class="thin">NÚMEROS DA</span> <span class="strong">CITINOVA</span>
       </h2>
 
-      <div class="row g-4 mt-4">
-        <div class="col-md-4">
-          <div class="number-item">
-            <div class="number-top">
-              <div class="number-big">23</div>
-              <div class="number-text">
-                <em>Parcerias com grandes</em><br>
-                <em>empresas</em>
-              </div>
-            </div>
-            <div class="number-line"><span class="dot"></span></div>
-          </div>
+      <div class="numbers-grid">
+        <div class="numbers-item">
+          <div class="numbers-value">23</div>
+          <div class="numbers-label">Parcerias com grandes empresas</div>
+          <div class="numbers-line"></div>
         </div>
 
-        <div class="col-md-4">
-          <div class="number-item">
-            <div class="number-top">
-              <div class="number-big">+10</div>
-              <div class="number-text">
-                <em>De recursos</em><br>
-                <em>arrecadados em</em><br>
-                <em>prêmios para Fortaleza</em><br>
-                <span class="number-sub">Milhões</span>
-              </div>
-            </div>
-            <div class="number-line"><span class="dot"></span></div>
-          </div>
+        <div class="numbers-item">
+          <div class="numbers-value">+10</div>
+          <div class="numbers-label">Milhões<br><span class="muted">de recursos arrecadados em prêmios para Fortaleza</span></div>
+          <div class="numbers-line"></div>
         </div>
 
-        <div class="col-md-4">
-          <div class="number-item">
-            <div class="number-top">
-              <div class="number-big">+100</div>
-              <div class="number-text">
-                <em>Impactadas pelo</em><br>
-                <em>programa de Idiomas</em><br>
-                <span class="number-sub">Mil pessoas</span>
-              </div>
-            </div>
-            <div class="number-line"><span class="dot"></span></div>
-          </div>
+        <div class="numbers-item">
+          <div class="numbers-value">+100</div>
+          <div class="numbers-label">Mil pessoas<br><span class="muted">impactadas pelo programa de Idiomas</span></div>
+          <div class="numbers-line"></div>
         </div>
       </div>
-
     </div>
   </section>
 
