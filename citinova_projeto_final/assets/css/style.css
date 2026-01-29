@@ -120,20 +120,15 @@ body{
   padding: 16px;
 }
 
-/* Foto do SOBRE: menor, aparece inteira */
-.media-frame--about{
-  max-width: 300px;      /* controla o tamanho total do card */
-  margin: 0 auto;        /* centraliza */
-  padding: 0px;
-}
-.media-frame--about img{
+/* Apenas a imagem da fachada */
+.img-fachada {
   width: 100%;
-  max-height: 460px;     /* trava altura pra não ficar enorme */
-  height: auto;          /* mantém proporção */
-  object-fit: contain;   /* aparece a imagem toda */
-  border-radius: 12px;
-  display: block;
+  height: 420px;
+  object-fit:inherit;
+  border-radius: 160x;
 }
+
+
 
 /* News cards */
 .news-card{
